@@ -31,16 +31,16 @@ class BearBackup < Formula
             <string>#{HOMEBREW_PREFIX}/bin/bear_backup.py</string>
             <string>--notify</string>
             <string>--remove</string>
-            <string>~/Google Drive - Home/Backups/Bear/bear_backup</string>
+            <string>~/Google\ Drive\ \-\ Home/Backups/Bear/bear_backup</string>
         </array>
         <key>RunAtLoad</key>
         <false/>
         <key>StartCalendarInterval</key>
         <dict>
             <key>Hour</key>
-            <integer>9</integer>
+            <integer>21</integer>
             <key>Minute</key>
-            <integer>0</integer>
+            <integer>27</integer>
         </dict>
     </dict>
 </plist>
