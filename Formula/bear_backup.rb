@@ -40,7 +40,7 @@ class BearBackup < Formula
             <key>Hour</key>
             <integer>21</integer>
             <key>Minute</key>
-            <integer>27</integer>
+            <integer>30</integer>
         </dict>
     </dict>
 </plist>
