@@ -38,9 +38,9 @@ class BearBackup < Formula
         <key>StartCalendarInterval</key>
         <dict>
             <key>Hour</key>
-            <integer>21</integer>
+            <integer>16</integer>
             <key>Minute</key>
-            <integer>32</integer>
+            <integer>00</integer>
         </dict>
     </dict>
 </plist>
