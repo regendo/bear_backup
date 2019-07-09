@@ -1,7 +1,7 @@
 class BearBackup < Formula
   desc "Bear backup utility"
-  homepage "https://github.com/mivok/bear_backup"
-  head "git@github.com:mivok/bear_backup", :using => :git
+  homepage "https://github.com/ronanchilvers/bear_backup"
+  head "git@github.com:ronanchilvers/bear_backup", :using => :git
 
   depends_on "python3"
 
@@ -31,14 +31,14 @@ class BearBackup < Formula
                 <string>#{HOMEBREW_PREFIX}/bin/bear_backup.py</string>
                 <string>--notify</string>
                 <string>--remove</string>
-                <string>~/Dropbox/backups/bear</string>
+                <string>~/Google Drive - Home/Backups/Bear/bear_backup</string>
             </array>
             <key>RunAtLoad</key>
             <false/>
             <key>StartCalendarInterval</key>
             <dict>
                 <key>Hour</key>
-                <integer>0</integer>
+                <integer>9</integer>
                 <key>Minute</key>
                 <integer>0</integer>
             </dict>
