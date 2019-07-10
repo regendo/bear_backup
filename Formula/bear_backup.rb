@@ -31,7 +31,7 @@ class BearBackup < Formula
             <string>#{HOMEBREW_PREFIX}/bin/bear_backup.py</string>
             <string>--notify</string>
             <string>--remove</string>
-            <string>~/Google\ Drive\ \-\ Home/Backups/Bear/bear_backup</string>
+            <string>~/Google\ Drive\ \-\ Home/Backups/Bear</string>
         </array>
         <key>RunAtLoad</key>
         <false/>
