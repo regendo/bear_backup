@@ -1,7 +1,7 @@
 class BearBackup < Formula
   desc "Bear backup utility"
-  homepage "https://github.com/ronanchilvers/bear_backup"
-  head "git@github.com:ronanchilvers/bear_backup", :using => :git
+  homepage "https://github.com/regendo/bear_backup"
+  head "git@github.com:regendo/bear_backup", :using => :git
 
   depends_on "python3"
   depends_on "git"
