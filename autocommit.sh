@@ -1,3 +1,4 @@
+#!/bin/bash
 git init -q
 git add -A
 git status | grep "nothing to commit" > /dev/null

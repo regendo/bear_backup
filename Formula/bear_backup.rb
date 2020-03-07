@@ -8,7 +8,8 @@ class BearBackup < Formula
 
   def install
     bin.mkpath
-    bin.install "bear_backup.py"
+	 bin.install "bear_backup.py"
+	 bin.install "autocommit.sh"
   end
 
   plist_options :manual => "bear_backup"
