@@ -21,11 +21,10 @@ desired.
 Alternatively, there is a homebrew formula to install using homebrew:
 
 ```
-brew install https://raw.githubusercontent.com/mivok/bear_backup/master/Formula/bear_backup.rb
+brew install --HEAD https://raw.githubusercontent.com/regendo/bear_backup/master/Formula/bear_backup.rb
 ```
 
-The homebrew script also provides a launchctl module to back up every night at
-midnight to a dropbox directory. If you want to use this, run:
+The homebrew script also provides a launchctl module to back up every hour to an onedrive directory. If you want to use this, run:
 
 ```
 brew service start bear_backup
@@ -72,6 +71,7 @@ the backup that are no longer in bear.
 * `-r`, `--remove` - Remove any bearnote files from the destination that
   aren't in the list of notes to be backed up. In other words, this will
   remove any notes from an existing backup that have been deleted from bear.
+* `-c`, `--commit` - Automatically commit changes to the backup to a git repository.
 
 ## Restoring backups
 

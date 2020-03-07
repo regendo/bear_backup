@@ -4,6 +4,7 @@ class BearBackup < Formula
   head "git@github.com:ronanchilvers/bear_backup", :using => :git
 
   depends_on "python3"
+  depends_on "git"
 
   def install
     bin.mkpath
@@ -31,7 +32,8 @@ class BearBackup < Formula
             <string>#{HOMEBREW_PREFIX}/bin/bear_backup.py</string>
             <string>--notify</string>
             <string>--remove</string>
-            <string>~/Google\ Drive\ \-\ Home/Backups/Bear</string>
+            <string>--commit</string>
+            <string>~/OneDrive/Documents/bear.app Notes archive</string>
         </array>
         <key>RunAtLoad</key>
         <false/>
