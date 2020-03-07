@@ -17,6 +17,7 @@ dbpath = os.path.join(approot, "database.sqlite")
 assetpath = os.path.join(approot, "Local Files")
 imagepath = os.path.join(assetpath, "Note Images")
 filepath = os.path.join(assetpath, "Note Files")
+autocommit = os.path.join(os.path.dirname(os.path.realpath(__file__)), "autocommit.sh")
 
 asset_re = re.compile(r'\[(image|file):([^]]+)\]')
 
@@ -143,6 +144,8 @@ if __name__ == '__main__':
                         help="Show an OSX notification once backup is complete")
     parser.add_argument('-r', '--remove', action='store_true',
                         help="Remove any deleted notes from the backup")
+    parser.add_argument('-c', '--commit', action='store_true',
+                        help="Commit changes to the backup using git")
     parser.add_argument('dirname', metavar='DIRECTORY', type=os.path.expanduser,
                         help='directory to back up notes to')
     args = parser.parse_args()
@@ -196,3 +199,6 @@ if __name__ == '__main__':
         subprocess.run(["osascript","-e",
                         "display notification \"%s\" with title \"%s\"" % (
                             text, title)])
+
+    if args.commit:
+        subprocess.run(autocommit, shell=True, check=True)
